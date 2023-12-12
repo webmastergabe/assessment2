@@ -59,78 +59,27 @@ const deliveryAreaZipCodes = [85205, 85204, 85203, 85213, 85206]
 // //I want to loop through each item of the array and compare it to the zipcode input
 // //If the zipcode is found, return a string
 // //If not, return alt string
-// let goodZip = [];
-// function canWeDeliver(zipcode) {
-//     for (let i = 0; i < deliveryAreaZipCodes.length; i++) {
-//         while (zipcode === deliveryAreaZipCodes[i]) {
-//             goodZip.push(deliveryAreaZipCodes);
-//             console.log(`You're in our delivery zone!`); break;
+
+// function goodZip(zipcode) {
+//     let first = 0;
+//     //let last = zipcode.length - 1;
+
+//     while (first < deliveryAreaZipCodes.length) {
+//         if (zipcode === deliveryAreaZipCodes[first]) {
+//             // return true;
+//             console.log("You're in our delivery zone!");
+//             return true;
+//         } 
+//         if (zipcode !== deliveryAreaZipCodes[first]) {
+//             first++;
 //         }
 //     }
-//  return "Sorry, we can't deliver to that address";
-// }
-
-// function canWeDeliver(zipcode) {
-//     for (let i = 0; i < deliveryAreaZipCodes.length; i++) {
-//         if (zipcode === deliveryAreaZipCodes[i]) {
-//             goodZip.push([i]);
-
-//                          } else if {
-//                                  //console.log("Sorry, we can't deliver to that address");
-//                //console.log(canWeDeliver(85205));
-//     while (true) {
-//         if (zipcode === canWeDeliver); {
-//             console.log(`You're in our delivery zone!`)
-//     } //else {
-//     while (zipcode !== canWeDeliver); { 
-//     console.log("Sorry, we can't deliver to that address")
-
-//       // }  if (zipcode !== canWeDeliver) {
-//      }
-//     }
-// }   
-
-//     for (let i in deliveryAreaZipCodes) {
-//         
-// }
-//      for (let i = 0; i < deliveryAreaZipCodes.length; i++) {
-//         if (zipcode === deliveryAreaZipCodes[i]) {
-//             console.log(`You're in our delivery zone!`)
-//         } else {
-//             console.log("Sorry, we can't deliver to that address")
-//             //return false;
-//         }
-//     }
-// }
-     
-
-
-//      (let i = 0; i < deliveryAreaZipCodes.length; i++) { 
-//         if (deliveryAreaZipCodes[i] === zipcode) {
-//             console.log(`You're in our delivery zone!`);
-//         } else if (deliveryAreaZipCodes[i] !== zipcode) { 
-//             console.log("Sorry, we can't deliver to that address");
-//         }
-
-//     }
-// }
-
-
-// let i = 0;
-// function canWeDeliver(zipcode) {
-//     while(canWeDeliver[i]) {
-//         zipcode = canWeDeliver[i];
-//     console.log("You're in our delivery zone!");
-//     }
-//     if(zipcode !== canWeDeliver) {
+//     // 
 //     console.log("Sorry, we can't deliver to that address");
-//     }
+//     return false;
 // }
-
-// // const myZip = deliveryAreaZipCodes.filter(canWeDeliver);
-// canWeDeliver(85205);
-
-
+        
+// console.log(goodZip(85216));
 
 /* 
     Problem 2 Continued
@@ -149,6 +98,13 @@ const deliveryAreaZipCodes = [85205, 85204, 85203, 85213, 85206]
     Name your new function `canWeDeliverTwo`.
 */
 
+
+//const deliveryAreaZipCodes = [85205, 85204, 85203, 85213, 85206]
+// //I want to loop through each item of the array and compare it to the zipcode input
+// //If the zipcode is found, return a string
+// //If not, return alt string
+
+
 function canWeDeliverTwo(zipcode) {
     if (deliveryAreaZipCodes.includes(zipcode)) {
         console.log("You're in our delivery zone!");
@@ -157,8 +113,7 @@ function canWeDeliverTwo(zipcode) {
     }
 }
 
-   console.log(canWeDeliverTwo(85203));
-    // CODE HERE
+console.log(canWeDeliverTwo(85200));
 
 
 //////////////////PROBLEM 3////////////////////
@@ -174,16 +129,16 @@ function canWeDeliverTwo(zipcode) {
     Read on for more instructions.
 */
 
-const deals = [
-    {
-        title: '15% Off!', 
-        desc: 'Applied to your entire order when you spend $30 or more'
-    }, 
-    {
-        title: 'Free Kids Meal with 2 Regular Entrees', 
-        desc: 'This deal lasts until the end of March!'
-    }
-]
+// const deals = [
+//     {
+//         title: '15% Off!', 
+//         desc: 'Applied to your entire order when you spend $30 or more'
+//     }, 
+//     {
+//         title: 'Free Kids Meal with 2 Regular Entrees', 
+//         desc: 'This deal lasts until the end of March!'
+//     }
+// ]
 
 /*
     The owner has decided to take the 15% off
@@ -199,8 +154,8 @@ const deals = [
 
 
 
-const updated = deals[0].title.replace('15% Off!', '10% Off!');
-console.log(deals, updated);
+// const updated = deals[0].title.replace('15% Off!', '10% Off!');
+// console.log(deals, updated);
 
 
 /*
@@ -212,5 +167,5 @@ console.log(deals, updated);
     to replace the word March with April.
 */
 
-const updatedDeals = deals[1].desc.replace('March', 'April');
-console.log(deals, updatedDeals);
+// const updatedDeals = deals[1].desc.replace('March', 'April');
+// console.log(deals, updatedDeals);
